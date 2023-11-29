@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+/*
+font-family: 'Barriecito', cursive;
+
+*/
+
+
+.div1{border: 4px double #1182be;padding: 40px;margin: 40px;}
+.p1{border: 4px dotted #ff0000;padding:20px 30px;font-family: 'Barriecito', cursive;}
+/*
+<span class="material-symbols-outlined">
+drag_click
+</span>
+/*

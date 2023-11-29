@@ -1,0 +1,58 @@
+@mixin pos($position, $margin, $top, $bottom, $left, $right) {
+  position: $position;
+  margin: $margin;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+
+$heart-color: #9E3F34;
+$heartbeat-color: #B02020;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #1F1F1F;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  color: $heart-color;
+  font-size: 3rem;
+  width: 100px;
+  height: 100px;
+  animation: heartbeat 0.8s infinite;
+  @include pos(absolute, auto, 50%, 50%, 0, 0);
+}
+
+@-webkit-keyframes heartbeat {
+  0% {font-size: 3.8rem; color: $heartbeat-color}
+  30% {font-size: 3rem}
+  60% {font-size: 2.5rem}
+  100% {font-size: 3rem}
+}
+
+@-moz-keyframes heartbeat {
+  0% {font-size: 3.8rem; color: $heartbeat-color}
+  30% {font-size: 3rem}
+  60% {font-size: 2.5rem}
+  100% {font-size: 3rem}
+}
+
+@keyframes heartbeat {
+  0% {font-size: 3.8rem; color: $heartbeat-color}
+  30% {font-size: 3rem}
+  60% {font-size: 2.5rem}
+  100% {font-size: 3rem}
+}

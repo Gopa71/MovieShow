@@ -1,0 +1,171 @@
+/* @import "compass/css3";
+
+$heartbeat-color: #e87;
+$heartbeat-size: 36px; // must be divisible by 2 and 3
+$heartbeat-rotation: rotate(45deg);
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content }
+  @-moz-keyframes #{$name} { @content }
+  @-o-keyframes #{$name} { @content }
+  @keyframes #{$name} { @content }
+}
+
+@mixin experimental($property, $value, $moz: true, $webkit: true, $o: true, $ms: true, $khtml: true, $official: true) {
+  @if $webkit   { -webkit-#{$property} : $value; }
+  @if $khtml    {  -khtml-#{$property} : $value; }
+  @if $moz      {    -moz-#{$property} : $value; }
+  @if $ms       {     -ms-#{$property} : $value; }
+  @if $o        {      -o-#{$property} : $value; }
+  @if $official {         #{$property} : $value; }
+}
+
+@mixin animation($value) {
+  @include experimental(animation, $value);
+}
+
+@include keyframes(heartbeat) {
+  0%  { @include transform($heartbeat-rotation scale(1));   }
+  14% { @include transform($heartbeat-rotation scale(1.3)); }
+  28% { @include transform($heartbeat-rotation scale(1));   }
+  42% { @include transform($heartbeat-rotation scale(1.3)); }
+  70% { @include transform($heartbeat-rotation scale(1));   }
+}
+
+body {
+  text-align: center;
+  padding: 50px;
+}
+
+
+.heartbeat {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+
+.heartbeat:not(:required) {
+  @include animation(heartbeat 1300ms ease 0s infinite normal);
+  
+  display: inline-block;
+  position: relative;  
+  overflow: hidden;
+  text-indent: -9999px;
+  width: $heartbeat-size;  
+  height: $heartbeat-size;
+  @include transform($heartbeat-rotation scale(1));
+  @include transform-origin(50%, 50%);
+  
+  &:after, &:before {
+    position: absolute;
+    content: "";  
+    background: $heartbeat-color;
+  }
+  
+  &:before {
+    @include border-left-radius($heartbeat-size / 3);
+    top: ($heartbeat-size/3);
+    left: 0;
+    width: $heartbeat-size;
+    height: (2 * $heartbeat-size / 3);
+  }
+  
+  &:after {
+    @include border-top-radius($heartbeat-size / 3);
+    top: 0;
+    left: ($heartbeat-size / 3);
+    width: (2 * $heartbeat-size / 3);
+    height: ($heartbeat-size / 3);
+  }
+} */
+
+body {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+h1,
+h1+p {
+	margin: 30px 15px 0;
+	font-weight: 300;
+}
+h1+p a {
+	color: #333;
+}
+h1+p a:hover {
+	text-decoration: none;
+}
+h2 {
+	margin: 60px 15px 0;
+	padding: 0;
+	font-weight: 300;
+}
+h2 span {
+	margin-left: 1em;
+	color: #aaa;
+	font-size: 85%;
+}
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}

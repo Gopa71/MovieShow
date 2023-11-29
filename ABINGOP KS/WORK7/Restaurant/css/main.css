@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/*
+font-family: 'Dancing Script', cursive;
+*/
+.div1{background: url('../IMAGE/spacial2.jpeg') center bottom fixed no-repeat ;background-size: cover;}
+.h1{padding:0px 700px 0px ;color: rgb(211, 210, 143);font-size: 90px;font-family: 'Dancing Script', cursive;}
+.h2{padding:20px 500px 20px ;color: aliceblue;font-size: 90px;}
+.h3{display: inline-block; font-size: 40px;}
+
+/*.div2{background-image: url('../IMAGE/spacial.jpeg');display: inline-block ;float:right; width: 50%;height: 50%;}*/
+.div_1{
+    display: inline-block; width:24%;
+}
+.img1{
+        object-position: left;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 5px 20px 5px;
+       
+    }
+.h4{color: ;}
+
+.div3{display: inline-block;}
+.img6{display: inline-block;float:right;margin: 30px 0px 30px 30px; width: 500px;height: 500px;}
+.p1{font-size: 15px;}
+.img3{
+    object-position: left;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+}
+.div4{
+    display: inline-block;
+   
+    width: 24%;
+}
+
+.bt{
+    width: 130px;
+    height: 40px;
+    color: aliceblue;
+    background-color: rgb(216, 31, 31);
+    border: rgb(216, 31, 31) 1px solid;
+    float: left;
+}
+.h4{color: aliceblue;}
+.p5{color: aliceblue;}
+ .div_2{
+    display: inline-block;
+ }   
+ .div_2{background: url(../IMAGE/spacial.jpeg) no-repeat ;background-size: 100%;
+    width: 500px;
+    height: 700px;
+    float:right; 
+    margin-top: 30px;
+    }
+.h5{padding:0px 0px 0px ;color: rgb(231, 97, 92);font-size: 30px;font-family: 'Dancing Script', cursive;
+}
+.div6{background: url(../IMAGE/th.jpeg) no-repeat;
+width: 500px;
+height: 800px;
+background-size: 100%;
+float:right;
+margin-top: 30px;}
+.p6{color: rgb(215, 219, 222);}
+
+.div7{display: inline-block;width:18%;}
+.img4{width: ;}

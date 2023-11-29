@@ -1,0 +1,1 @@
+# 9. Define a function is_prime that takes an integer as an argument and returns True if it's a prime number and False if it's not.

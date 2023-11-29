@@ -1,0 +1,1 @@
+# 7. Write a function compute_power that takes two numbers, base and exponent, as arguments and returns the result of raising the base to the exponent.

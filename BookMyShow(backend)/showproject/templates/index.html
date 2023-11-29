@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows Here</title>
+    <link href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet">
+</head>
+<body>
+  <div class="div1">
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col-lg">
+               <nav class="navbar bg-dark">
+                   <div class="container-fluid" >
+                     <a class="navbar-brand"></a>
+                     <form class="d-flex" role="search">
+                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                       <button class="btn btn-outline-success" type="submit">Search</button>
+                     </form>
+                   </div>
+                 </nav>
+                </div>
+          </div>
+          <div class="row">
+             
+            <div class="col-lg">
+                <div class="div2"></div>
+            </div>
+
+          </div>
+    </div>
+    </div>
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/slide_web.avif' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/slide3webpage.avif' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/side2_sunburncolombowebshowcase1240x300.avif' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row asd">
+            <h3>Reccommended Movies</h3>
+            <div class="col-lg-3 col-md-4 col-sm-6 my-3 ">
+                <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00355670-kfqejswywp-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                  <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00370810-ebywtkuxkj-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                   <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00376040-dbjagdkcdg-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                   <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00355670-kfqejswywp-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+            </div>
+ 
+             <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                   <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00370810-ebywtkuxkj-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+            </div>
+             <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                    <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00376040-dbjagdkcdg-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+            </div>
+
+            
+              <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                    <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00355670-kfqejswywp-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+            </div>
+  
+              <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                    <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00370810-ebywtkuxkj-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+            </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                    <a href="{% static 'movie1.html' %}" > <img src="{% static 'images/et00376040-dbjagdkcdg-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+                </div>
+
+           
+               <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                     <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00355670-kfqejswywp-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+                </div>
+   
+               <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                     <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00370810-ebywtkuxkj-portrait.avif' %}" class="w-100" height="auto"></a>
+                     <h3> movie name</h3>
+                     <p>category</p>
+                </div>
+               <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                      <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00376040-dbjagdkcdg-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+                </div>
+
+            
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                      <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00355670-kfqejswywp-portrait.avif' %}" class="w-100" height="auto"> </a>  
+                      <h3> movie name</h3>
+                  <p>category</p>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                      <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00370810-ebywtkuxkj-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                       <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00376040-dbjagdkcdg-portrait.avif'%}" class="w-100" height="auto"> </a>  <h3> movie name</h3>
+                  <p>category</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                    <a href="{% static 'movie1.html' %}" ><img src="{% static 'images/et00355670-kfqejswywp-portrait.avif' %}" class="w-100" height="auto"></a>   <h3> movie name</h3>
+                  <p>category</p>
+              </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

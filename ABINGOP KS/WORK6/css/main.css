@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Tilt+Prism&display=swap');
+.body{background-color: rgb(43, 40, 40); border: 4px solid crimson;
+padding: 40px;margin: 20px 45px 20px;}
+.h1{border-bottom: 4px solid  rgb(189, 70, 70); font-size: 65px;color: rgb(182, 37, 95);
+   }
+.p1{ background: url('/image/OIP\ \(1\).jpeg') center bottom fixed repeat-x ;background-size: cover; font-size: 25px;font-family: 'Barriecito', cursive;
+    font-family: 'Tilt Prism', cursive;
+    }
+/*
+font-family: 'Barriecito', cursive;
+font-family: 'Tilt Prism', cursive;
+*/
+.h2{ border-bottom: 4px solid #dbb417; font-size: 58px;color: #dbb417;padding: 20px 500px 20px;}
+.p2{background: url('/image/onepiece/Main_characters_of_One_Piece.png');center center fixed no-repeat;background-size: cover; font-size: 25px;font-family: 'Barriecito', cursive;
+    font-family: 'Tilt Prism', cursive;}
+.h3{color: aliceblue;}
+.div1{padding: 20px 500px 20px;}
+.
